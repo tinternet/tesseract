@@ -46,6 +46,7 @@ impl Point4D {
         Point3D::new(x, y, z)
     }
 
+    #[inline]
     fn dot(&self, x: f64, y: f64, z: f64, w: f64) -> f64 {
         self.x * x + self.y * y + self.z * z + self.w * w
     }
